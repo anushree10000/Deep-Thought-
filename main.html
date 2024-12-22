@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Journey Board</title>
+    
+</head>
+<body>
+    <div class="journey-board-container" id="journeyBoard">
+        <button class="toggle-button" id="toggleButton">&#8594;</button>
+        <div class="journey-board-content">
+            <h3>Journey Board</h3>
+            <ul>
+                <li>Explore the world of management</li>
+                <li>Technical Project Management</li>
+                <li>Threadbuild</li>
+                <li>Structure your pointers</li>
+                <li>4SA Method</li>
+            </ul>
+        </div>
+    </div>
+
+   
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <body>
+    <!-- Your HTML code... -->
+    
+    <script>
+        // JavaScript to handle toggling the journey board
+        const journeyBoard = document.getElementById('journeyBoard');
+        const toggleButton = document.getElementById('toggleButton');
+
+        toggleButton.addEventListener('click', () => {
+            // Toggle the 'expanded' class on the journey board container
+            journeyBoard.classList.toggle('expanded');
+
+            // Change the arrow direction on the toggle button
+            if (journeyBoard.classList.contains('expanded')) {
+                toggleButton.innerHTML = '&#8592;'; // Left arrow
+            } else {
+                toggleButton.innerHTML = '&#8594;'; // Right arrow
+            }
+        });
+    </script>
+</body>
+
+  <div class="container">
+    <header>
+        <div class="img">
+            <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="Sample Image">
+        </div>
+       
+      <br>
+      <h2>Technical Project Management</h2>
+      <div class="button">
+        <button class="submit-task">Submit Task</button>
+        </div>
+      <br>
+          <div class="this">
+       <h3>Explore the world of management</h3>
+        <p>
+        As a project manager, you play an important role in leading a 
+        project through initiation, planning, execution, monitoring, controlling, and
+        completion. How do you want to manage each and every step of your life?
+      </p>
+     
+    </header>
+
+    <div class="content">
+      <div class="section">
+        <h2>Technical Project Management</h2>
+        <p>Description: Story of Alignment Scope of Agility Specific Accountable Staggering Approach</p>
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="section">
+        <h2>Threadbuild</h2>
+        <p>Description: Watch the video and threadbuild, and jot out key threads while watching the video</p>
+        <div class="threadbuild">
+          <input type="text" placeholder="Sub thread 1">
+          <input type="text" placeholder="Sub Interpretation 1">
+          <textarea placeholder="Summary for Thread A"></textarea>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Structure your Pointers</h2>
+        <p>Description: Write a 300 - 400 word article from your thread. Publish your understanding and showcase your understanding to the entire world.</p>
+        <form>
+          <input type="text" placeholder="Title">
+          <textarea placeholder="Content Big"></textarea>
+        </form>
+      </div>
+
+      <div class="section">
+        <h2>4SA Method</h2>
+        <p>Description: To explore more, read more</p>
+        <details>
+          <summary>Introduction</summary>
+          <p>The 4SA Method, How to bring an idea into progress?</p>
+        </details>
+        <details>
+          <summary>Thread A</summary>
+          <p>
+            How are you going to develop your strategy? Which method are you
+            going to use to develop a strategy? What if the project is lengthy?
+          </p>
+        </details>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
